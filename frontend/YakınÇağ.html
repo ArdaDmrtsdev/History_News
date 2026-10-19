@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Yakın Çağ Tarihi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #f2ede6;
+    --primary: #3f2e1f;
+    --secondary: #7a5235;
+    --accent: #c6a26b;
+    --light: #ffffff;
+    --dark: #222;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    line-height: 1.8;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1559570278-eb8d71d06403") center/cover;
+    padding: 130px 10%;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+
+.hero p {
+    max-width: 900px;
+    margin: 20px auto 0;
+    font-size: 19px;
+}
+
+/* SECTION */
+section {
+    padding: 90px 10%;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 35px;
+}
+
+/* CLASSIC CARD */
+.card {
+    background: var(--light);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    transition: transform .3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+/* QUOTE CARD */
+.quote-card {
+    background: linear-gradient(135deg,#3f2e1f,#6a4b32);
+    color: #fff;
+    padding: 45px;
+    border-radius: 18px;
+    font-style: italic;
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+.quote-card span {
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* DOCUMENT CARD */
+.document-card {
+    background: #fff;
+    border-left: 8px solid var(--accent);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+.document-card h4 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+/* STAT CARDS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+}
+
+.stat {
+    background: #fff;
+    text-align: center;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+.stat h2 {
+    font-size: 48px;
+    color: var(--accent);
+}
+
+.stat p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* TIMELINE */
+.timeline {
+    border-left: 5px solid var(--accent);
+    padding-left: 35px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+}
+
+.timeline-item h4 {
+    color: var(--secondary);
+    font-size: 22px;
+}
+
+/* FOOTER */
+footer {
+    background: #1c1c1c;
+    color: #bbb;
+    text-align: center;
+    padding: 35px;
+}
+
+footer span { color: var(--accent); }
+</style>
+
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="site-nav">
+  <ul>
+    <li><a href="Tarih.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+    <li><a href="YakınÇağ.html"><i class="fa-solid fa-chess-rook"></i> Yakın Çağ</a></li>
+    <li><a href="arkeoloji.html"><i class="fa-solid fa-landmark"></i> Arkeoloji</a></li>
+    <li><a href="Uygarlıklar.html"><i class="fa-solid fa-rocket"></i> Uygarlıklar</a></li>
+    <li><a href="index.html"><i class="fa-regular fa-address-card"></i> Tavsiyeler</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+    <h1>Yakın Çağ Tarihi</h1>
+    <p>Devrimler, ideolojiler ve modern dünyanın doğuşu</p>
+</div>
+
+<section>
+    <h2 class="title">Tarihi Dönüşüm</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>1789 – Fransız İhtilali</h4>
+            <p>Egemenlik anlayışı kökten değişti.</p>
+        </div>
+        <div class="timeline-item">
+            <h4>1914 – I. Dünya Savaşı</h4>
+            <p>İmparatorluklar sona erdi.</p>
+        </div>
+        <div class="timeline-item">
+            <h4>1939 – II. Dünya Savaşı</h4>
+            <p>Küresel dengeler yeniden kuruldu.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Önemli İdeolojiler</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="resimler/images.öilliyetcılık.jpg">
+            <div class="card-body">
+                <h3>Milliyetçilik</h3>
+                <p>Ulus-devletlerin doğuşu.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9">
+            <div class="card-body">
+                <h3>Liberalizm</h3>
+                <p>Bireysel özgürlükler.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555374018-13a8994ab246">
+            <div class="card-body">
+                <h3>Sosyalizm</h3>
+                <p>Eşitlik ve sınıfsız toplum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Tarihe Yön Veren Sözler</h2>
+    <div class="grid">
+        <div class="quote-card">
+            “Egemenlik kayıtsız şartsız milletindir.”
+            <span>— Mustafa Kemal Atatürk</span>
+        </div>
+
+        <div class="quote-card">
+            “İnsanlar özgür doğar ve özgür yaşar.”
+            <span>— İnsan ve Yurttaş Hakları Bildirgesi</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Önemli Belgeler</h2>
+    <div class="grid">
+        <div class="document-card">
+            <h4>1789 İnsan Hakları Bildirgesi</h4>
+            <p>Modern demokrasinin temeli.</p>
+        </div>
+
+        <div class="document-card">
+            <h4>1923 Lozan Antlaşması</h4>
+            <p>Türkiye’nin bağımsızlığı.</p>
+        </div>
+
+        <div class="document-card">
+            <h4>1945 Birleşmiş Milletler</h4>
+            <p>Küresel barış girişimi.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Yakın Çağ İstatistikleri</h2>
+    <div class="stats">
+        <div class="stat">
+            <h2>2</h2>
+            <p>Dünya Savaşı</p>
+        </div>
+        <div class="stat">
+            <h2>100+</h2>
+            <p>Yeni Ulus Devlet</p>
+        </div>
+        <div class="stat">
+            <h2>1789</h2>
+            <p>Başlangıç Yılı</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 <span>Tarih Portalı</span> | Yakın Çağ
+</footer>
+
+</body>
+</html>
+

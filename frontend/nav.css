@@ -1,0 +1,54 @@
+.site-nav {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f6f3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.site-nav a:hover {
+  background-color: #ececec;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Bulunduğun sayfa */
+.site-nav a.active {
+  border-bottom: 3px solid #8b6b4f;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .site-nav a { padding: 14px 12px; font-size: 14px; }
+}

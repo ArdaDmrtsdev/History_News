@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tavsiye</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-nav">
+  <ul>
+    <li><a href="Tarih.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+    <li><a href="YakınÇağ.html"><i class="fa-solid fa-chess-rook"></i> Yakın Çağ</a></li>
+    <li><a href="arkeoloji.html"><i class="fa-solid fa-landmark"></i> Arkeoloji</a></li>
+    <li><a href="Uygarlıklar.html"><i class="fa-solid fa-rocket"></i> Uygarlıklar</a></li>
+    <li><a href="index.html"><i class="fa-regular fa-address-card"></i> Tavsiyeler</a></li>
+  </ul>
+</nav>
+
+<h1>Tavsiye Köşesi</h1>
+
+<div class="buttons">
+    <button onclick="getTavsiyeler('film')">🎬 Film</button>
+    <button onclick="getTavsiyeler('kitap')">📚 Kitap</button>
+    <button onclick="getTavsiyeler('belgesel')">📺 Belgesel</button>
+</div>
+
+<div id="tavsiye-listesi" class="cards"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

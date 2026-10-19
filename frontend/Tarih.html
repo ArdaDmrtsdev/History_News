@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarih1.0</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+  <style>
+
+    h5 {
+      text-decoration: underline;
+      margin-top: 50px;
+    }
+
+    header {     /* Ana Logo css*/
+
+      width: 100%;
+      height: 200px;
+      max-width: 400px;
+      margin: 40px auto;
+      background-image: url(resimler/tarihresim.webp);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      transition: 0.45s ease;
+    }
+
+
+    header:hover {
+
+      transform: scale(1.10);
+
+    }
+      .card {                 /* Boostrap cardları css*/
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+   
+    }
+
+    img {
+
+      width: 300px;
+      height: 300px;
+    }
+
+    #arda {
+          
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 3s ease;
+
+    }
+
+    #arda:hover {
+
+      transform: rotateY(360deg);
+    }
+
+    section {
+
+      border: inset;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin-top: 50px ;
+
+    }
+    
+    .carousel-item img {
+    width: 100%;
+    height: 500px;         /* Slayt yüksekliği - istediğin gibi ayarla */
+    object-fit: cover;     /* Resmi kutuya tam oturtur */
+}
+body {
+  
+    font-family: 'Roboto', sans-serif;
+      background-color: #f7f6f3;
+      color: #2c2c2c;
+ 
+}
+
+    h1, h2, h4, h5 {
+      
+      font-family: 'Playfair Display', serif;
+    }
+
+    h2 {
+      border-left: 5px solid #8b6b4f;
+      padding-left: 10px;
+      margin-bottom: 25px;
+    }
+       /* MINI CARD */
+    .mini-card {
+       
+      background-color: #fff;
+      border-left: 4px inset #8b6b4f;   /* Yandan 3 boyutlu gözükmesini sağlıyoruz.  */
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+.site-footer {
+  background-color: #1e1e1e;;   /* Açık tarih tonu */
+  color: #cfcfcf;
+  padding: 50px 0 20px;
+  margin-top: 80px;
+}
+
+.site-footer h5 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color:#cfcfcf;
+}
+
+.site-footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color:  #cfcfcf;
+}
+
+.footer-links a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #8b6b4f;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-top: 1px solid  #cfcfcf
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color:  #cfcfcf;
+}
+
+
+
+  </style>
+
+  <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+  <header>
+
+  </header>
+
+ <nav class="site-nav">
+  <ul>
+    <li><a href="Tarih.html" class="active"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+    <li><a href="YakınÇağ.html" class="active"><i class="fa-solid fa-chess-rook"></i> Yakın Çağ</a></li>
+    <li><a href="arkeoloji.html"  class="active" ><i class="fa-solid fa-landmark"></i> Arkeoloji</a></li>
+    <li><a href="Uygarlıklar.html" class="active" ><i class="fa-solid fa-rocket"></i> Uygarlıklar</a></li>
+    <li><a href="index.html"  class="active"><i class="fa-regular fa-address-card"></i> Tavsiyeler</a></li>
+  </ul>
+</nav>
+  <div class="container mt-5  ">  
+    <div class=" row ">
+      <div class="col-md-4 col-sm-12 col-lg-4  ">
+        <img src="resimler/burning-the-ships-34.jpg" alt="resim 1 ulaşılamadı">
+
+      </div>
+      <div class="col-md-4  col-sm-12 col-lg-4 ">
+        <img src="resimler/roma.resım2.jpg" alt="resimm 2 ulaiılamadı">
+      </div>
+      <div class="col-md-4  col-sm-12  col-lg-4" style="background-color:#f1f1f1 ;" id="arda">
+        <i style="text-align: center; text-decoration: underline;">
+          <h4>Pratik Bilgi Köşesi</h4>
+        </i>
+        <br>
+        <small>
+          <p>-Veni,Vidi,Vici!</p>
+        </small>
+        <small>
+          <p>
+            Tarihi kaynaklara göre, MÖ 100 veya MÖ 44 yılları arasında yaşadığı tahmin edilen
+            Roma Generali Julius Sezar, Pontus asıllı Basforos kralı II. Farnakis ile Zile Altıağaç
+            mevkiinde çok kanlı bir savaş yapar. Savaşta her iki taraf da büyük kayıplar verir.
+            Ancak savaşı Roma Generali Julius Sezar kazanır.
+            Bunun üzerine dünyaca ünlü sözü ”Veni-vidi-vici” (Geldim-gördüm-yendim) diyerek, durumu Roma'ya bildirir.
+          </p>
+
+        </small>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <br>
+    <h2 style="margin-left: 10px;">Tarihi keşifler nasıl yapılır ?</h2>
+    <p style="margin-left: 5px;">
+      Tarihi keşifler, geçmişe ait izleri bulmak ve anlamlandırmak için uzun ve dikkatli bir süreçle yapılır.
+      Öncelikle araştırmacılar, eski haritalar, yazıtlar, resmi kayıtlar ve seyyahların notları gibi tarihî
+      belgeleri inceleyerek nerede bir kalıntı veya önemli bir yerleşim olabileceğine dair ipuçları toplar. Daha
+      sonra modern teknolojiden yararlanılır; uydu görüntüleri, drone çekimleri, jeoradar ve LIDAR gibi
+      yöntemlerle toprağın üstü ve altı taranarak gizli yapılar ya da eski şehirlerin izleri belirlenmeye
+      çalışılır. İhtimal görülen bölge tespit edildiğinde yüzey araştırması yapılır ve bu sırada arazi üzerinde
+      görülebilecek seramik parçaları, taş duvar kalıntıları veya yol izleri gibi bulgular kaydedilir. Eğer
+      bölgenin gerçekten arkeolojik açıdan zengin olduğu düşünülürse kazı yapmak için resmi izinler alınır ve
+      uzmanlardan oluşan bir ekip kurulur. Kazılar oldukça titizlik gerektiren bir çalışmadır; toprak katman
+      katman kaldırılır, her buluntu numaralandırılarak kaydedilir ve bulunduğu yer dikkatle belgelenir. Eserler
+      laboratuvara götürülerek karbon-14 testi, DNA analizi gibi yöntemlerle yaşları ve kökenleri araştırılır. Son
+      olarak elde edilen tüm bilgiler bir araya getirilip yorumlanır ve böylece geçmişte yaşayan insanların
+      hayatı, kültürü ve yaşadığı olaylar hakkında sonuçlara ulaşılır. Bu süreç tamamlandığında bulgular bilimsel
+      yayınlarla, müzelerle ve kamuoyuyla paylaşılır.
+    </p>
+    <br>
+
+  </section>
+
+  <br><br><br>
+
+  <div class="container">
+
+    <div class="row ">
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4 ">
+            <img src="resimler/yeni-proje-2025-11-28t165233-vm4r_cover.webp" alt="Şanlıurfa fotograf">
+          </div>
+          <div class="col-md-8 ">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: none;">Şanlıurfada keşifler her geçen gün devam ediyor...</h5>
+              <p class="card-text">Şanlıurfa'da MÖ 8.400 yılında yapılmış insan yüzü heykeli bulundu.Her gün hararetli
+                şekilde yapılan kazılar meyvesını verıyor.Uzmanlar bunun en eski insan yüzü temalı heykellerinden biri
+                olduğunun dikkatini çekti.Göbeklitepe dünyanın en eski dini kalıntılarının bulundugu insanlığın en eski
+                yerleşimlerinden biridir.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container my-5 ">
+
+    <div class="row px-3 ">
+
+      <div class=" col-lg-3 col-mb-3 col-sm-12 ">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"style="text-decoration: none;">Papa 14 üncü Leo Türkiyeyde!</h5>
+
+            <p class="card-text">Papa 14. Leo Türkiye programının üçüncü gününe Sultanahmet Camisi ziyaretiyle başladı.
+            </p>
+            <a href="https://www.bbc.com/turkce/articles/c4g43j31l7wo" class="card-link">BBC news</a>
+
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title"style="text-decoration: none;"> 100 yıl önce Petra'yı ziyaret etmek nasıl bir şeydi?</h5>
+
+            <p class="card-text">Yeniden keşfedilmesinden yaklaşık bir yüzyıl sonra, National Geographic muhabiri Petra kalıntılarını inceledi ve güzelliğinin neredeyse tarif edilemez olduğunu gördü.</p>
+            <a href="https://www.nationalgeographic.com/history/article/petra-ruins-jordan-treasury-archival" class="card-link">National Geographic</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-lg-5 col-mb-5 col-sm-12 ">
+        <div class="card mb-3">
+          <img src="resimler/iznikgöl.jpeg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title"style="text-decoration: none;">Papa 14 üncü Leo İznikte Ayin düzenledi</h5>
+            <p class="card-text">Papa 14 üncü Leo istanbuldaki Klise ziyaretlerinin ardından volswogen arenada 4 bin
+              kişilik ayine liderlik etti.Papa burada iznikt'te Fener Rum Ortodoks Patriği Bartholomeos ve diğer
+              Hıristiyan ruhani liderleriyle birlikte MS 325'te toplanan Birinci İznik Konsili'nin 1700. yıl dönümünü
+              kutladı.</p>
+            <p class="card-text"><small class="text-muted">30 Mart 2025</small></p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class=" col-lg-4 col-mb-4  col-sm-12  ">
+        <div class="card">
+          <img src="resimler/Paris’in-Yeraltı-Mezarları-Catacombes-de-Paris-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="">
+              <h5 class="card-title"style="text-decoration: none;">Paris Yeraltı Mezarlarında Karanlık Gizleniyor</h5>
+            </a>
+            <p class="card-text">Fransa'nın başkenti Paris'in sokaklarının altında, Paris Katakompları olarak bilinen
+              yerde 6 milyondan fazla insanın kemikleri bulunuyor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BİLİYOR MUYDUN -->
+<div class="container my-5">
+  <h2>Biliyor muydun?</h2>
+  <div class="row">
+    <div class="col-md-4"><div class="mini-card">🏺 Yazıyı Sümerler icat etti.</div></div>
+    <div class="col-md-4"><div class="mini-card">🏛 Roma yolları hâlâ kullanılıyor.</div></div>
+    <div class="col-md-4"><div class="mini-card">🗿 Göbeklitepe en eski tapınak.</div></div>
+  </div>
+</div>
+
+  
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Hakkında -->
+      <div class="col-md-4 col-sm-12">
+        <h5 style="color: white;">Tarih1.0</h5>
+        <p>
+          Tarih1.0, geçmişin izlerini günümüzle buluşturan,
+          arkeoloji, antik çağ ve tarihsel keşifleri
+          sade ve güvenilir biçimde sunmayı amaçlayan bir platformdur.
+        </p>
+      </div>
+
+      <!-- Hızlı Menü -->
+      <div class="col-md-4 col-sm-12">
+        <h5 style="color: white;">Hızlı Menü</h5>
+        <ul class="footer-links">
+          <li><a href="#">Antik Tarih</a></li>
+          <li><a href="#">Arkeoloji</a></li>
+          <li><a href="Uygarlıklar.html">Uygarlıklar</a></li>
+          <li><a href="hakkımda.html">Hakkında</a></li>
+        </ul>
+      </div>
+
+      <!-- Kaynak / Güven -->
+      <div class="col-md-4 col-sm-12">
+        <h5 style="color: white;">Bilgi & Kaynak</h5>
+        <p>
+          İçerikler akademik kaynaklar, müze yayınları
+          ve güvenilir haber ajansları temel alınarak hazırlanmıştır.
+        </p>
+      </div>
+
+    </div>
+    -
+
+    <div class="footer-bottom">
+      © 2025 <strong>Tarih1.0</strong> | Tüm Hakları Saklıdır
+    </div>
+  </div>
+</footer>
+
+
+
+
+</html>

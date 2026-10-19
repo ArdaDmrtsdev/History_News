@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygarlıklar</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+
+        #uygarliklar {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+#uygarliklar h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro {
+  max-width: 700px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.filters {
+  margin-bottom: 30px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background: #3a2f25;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.uygarlik-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+.uygarlik-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.uygarlik-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #3a2f25;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.stats h4 {
+  font-size: 2rem;
+  color: #3a2f25;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f6f3;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  background: linear-gradient(180deg,#1e1e1e,#333);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #8b6b4f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.time-box {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+
+.time-box::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #8b6b4f;
+  border-radius: 50%;
+  top: 25px;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::after {
+  right: -9px;
+}
+
+.right::after {
+  left: -9px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+}
+
+.content:hover {
+  transform: scale(1.05);
+}
+
+/* ACCORDION */
+details {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+summary {
+
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+/* RESPONSIVE */
+   @media screen and (max-width:768px){
+  .timeline::after { left: 20px; }
+  .time-box {
+    width: 100%;
+    padding-left: 60px;
+  }
+  .right { left: 0; }
+  .left::after, .right::after { left: 11px; }
+}
+</style>
+
+    </style>
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="site-nav">
+  <ul>
+    <li><a href="Tarih.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+    <li><a href="YakınÇağ.html"><i class="fa-solid fa-chess-rook"></i> Yakın Çağ</a></li>
+    <li><a href="arkeoloji.html"><i class="fa-solid fa-landmark"></i> Arkeoloji</a></li>
+    <li><a href="Uygarlıklar.html"><i class="fa-solid fa-rocket"></i> Uygarlıklar</a></li>
+    <li><a href="index.html"><i class="fa-regular fa-address-card"></i> Tavsiyeler</a></li>
+  </ul>
+</nav>
+    <section id="uygarliklar">
+  <h2>Uygarlıklar</h2>
+  <p class="intro">
+    Tarih boyunca insanlığın gelişimine yön veren büyük uygarlıkları
+    dönem, bölge ve kültürel özellikleriyle keşfedin.
+  </p>
+
+  <!-- FİLTRE BUTONLARI -->
+  <div class="filters">
+    <button onclick="filterUygarlik('all')">Tümü</button>
+    <button onclick="filterUygarlik('antik')">Antik Çağ</button>
+    <button onclick="filterUygarlik('orta')">Orta Çağ</button>
+  </div>
+
+  <!-- UYGARLIK KARTLARI -->
+  <div class="uygarlik-grid">
+
+    <div class="uygarlik-card antik">
+      <img src="resimler/ChatGPT Image 15 Ara 2025 13_24_00.png">
+      <div class="content">
+        <h3>Antik Mısır</h3>
+        <p>
+          Nil Nehri çevresinde gelişen, piramitleri ve firavunlarıyla
+          tanınan köklü bir uygarlık.
+        </p>
+        <ul>
+          <li><strong>Bölge:</strong> Kuzey Afrika</li>
+          <li><strong>Dönem:</strong> M.Ö. 3000 – M.Ö. 30</li>
+          <li><strong>Katkılar:</strong> Mimari, tıp, matematik</li>
+        </ul>
+        <a href="#" class="btn">Devamını Oku</a>
+      </div>
+    </div>
+
+    <div class="uygarlik-card antik">
+      <img src="resimler/roma.resım2.jpg">
+      <div class="content">
+        <h3>Antik Yunan</h3>
+        <p>
+          Demokrasi, felsefe ve bilimin temellerinin atıldığı uygarlık.
+        </p>
+        <ul>
+          <li><strong>Bölge:</strong> Ege ve Balkanlar</li>
+          <li><strong>Dönem:</strong> M.Ö. 800 – M.Ö. 146</li>
+          <li><strong>Katkılar:</strong> Felsefe, sanat, siyaset</li>
+        </ul>
+        <a href="#" class="btn">Devamını Oku</a>
+      </div>
+    </div>
+
+    <div class="uygarlik-card orta">
+      <img src="resimler/ChatGPT Image 15 Ara 2025 13_28_51.png">
+      <div class="content">
+        <h3>Roma İmparatorluğu</h3>
+        <p>
+          Hukuk sistemi ve mühendislik alanındaki başarılarıyla tanınır.
+        </p>
+        <ul>
+          <li><strong>Bölge:</strong> Avrupa, Akdeniz</li>
+          <li><strong>Dönem:</strong> M.Ö. 27 – M.S. 476</li>
+          <li><strong>Katkılar:</strong> Hukuk, yollar, mimari</li>
+        </ul>
+        <a href="#" class="btn">Devamını Oku</a>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br><br><br><br><br>
+<header>
+  <h1>Uygarlıkların Zaman Yolculuğu</h1>
+  <p>İnsanlık tarihine yön veren medeniyetler</p>
+</header>
+
+<!-- TIMELINE -->
+<div class="timeline">
+
+  <div class="time-box left">
+    <div class="content">
+      <h2>Mezopotamya</h2>
+      <p>MÖ 3500 – Yazı, şehirler, hukuk</p>
+    </div>
+  </div>
+
+  <div class="time-box right">
+    <div class="content">
+      <h2>Antik Mısır</h2>
+      <p>MÖ 3000 – Piramitler, mumyalama</p>
+    </div>
+  </div>
+
+  <div class="time-box left">
+    <div class="content">
+      <h2>Antik Yunan</h2>
+      <p>MÖ 1200 – Felsefe, demokrasi</p>
+    </div>
+  </div>
+
+  <div class="time-box right">
+    <div class="content">
+      <h2>Roma İmparatorluğu</h2>
+      <p>MÖ 27 – Hukuk, mühendislik</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ACCORDION -->
+<details>
+  <summary>🏺 Mezopotamya neden önemlidir?</summary>
+  <p>Yazının icadı, ilk kanunlar ve şehirleşme burada ortaya çıkmıştır.</p>
+</details>
+
+<details>
+  <summary>🏛 Roma neden hâlâ etkilidir?</summary>
+  <p>Roma hukuku, mimarisi ve şehir planlaması modern dünyayı şekillendirmiştir.</p>
+</details>
+  <!-- ALT BİLGİ -->
+  <div class="stats">
+    <div>
+      <h4>20+</h4>
+      <p>Uygarlık</p>
+    </div>
+    <div>
+      <h4>5000+</h4>
+      <p>Yıllık Tarih</p>
+    </div>
+    <div>
+      <h4>3</h4>
+      <p>Çağ</p>
+    </div>
+  </div>
+</section>
+
+</html>

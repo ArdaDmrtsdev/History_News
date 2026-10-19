@@ -8,3 +8,7 @@ denemeler serısı
 afjofjıw
 
 web projesi burada yazıldı js htmlm css
+a
+dasfdmkakna
+
+alfa denemece

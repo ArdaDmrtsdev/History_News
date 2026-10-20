@@ -7,7 +7,7 @@
 
 
 
-<h1 align="center">Tarih1.0</h1>
+<h1 align="center">History1.0</h1>
 
 <p align="center">
   <b>A history and archaeology platform that connects traces of the past with today</b><br>
@@ -18,7 +18,7 @@
 
 ## **About the Project**
 
-**Tarih1.0** is a multi-page website built for history and archaeology enthusiasts. The site consists of two parts:
+**History1.0** is a multi-page website built for history and archaeology enthusiasts. The site consists of two parts:
 
 - **Showcase pages:** Home, Modern History, Archaeology, and Civilizations
 - **Recommendation Corner:** A dynamic section powered by **Node.js + Express + MySQL**, where book, film, and documentary recommendations can be added and deleted, and ancient cities are listed

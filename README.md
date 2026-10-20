@@ -94,6 +94,9 @@ Shared techniques:
 
 ---
 
+
+![Fotoğraf 2](Assets/foto2.png)
+
 ## **JavaScript: What Was Done (script.js)**
 
 All interaction on the recommendations page is handled by JavaScript that sends requests to the backend using `fetch`.
@@ -111,6 +114,8 @@ All interaction on the recommendations page is handled by JavaScript that sends 
 | **`getEnIyiFilmler()`** | Lists the top 10 films with the highest IMDB rating, marked with a trophy. |
 
 ---
+
+![Fotoğraf 1](Assets/foto1.png)
 
 ## **Backend: Node.js and Express (server.js)**
 
@@ -152,6 +157,8 @@ The database runs on the MySQL (MariaDB) bundled with **XAMPP**. Two tables are 
 
 ---
 
+![Tavsiye Ekranı](Assets/foto_tavsiye.png)
+
 ## **Running the Project**
 
 **1. Start XAMPP:** Open XAMPP and **Start** the **MySQL Database**.
@@ -177,6 +184,11 @@ http://localhost:3001/Tarih.html
 > Do not open the files by double-clicking them. Open the site through the server so the recommendations page works.
 
 ---
+
+
+
+
+![Tavsiye Ekranı 2](Assets/tavsiye_2.png)
 
 ## **Features**
 
